@@ -27,6 +27,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	runtimeOnly 'com.mysql:mysql-connector-j:8.3.0'  // ← バージョン明記！
 
+	// ✅ Flyway(DB マイグレーション)
+  implementation 'org.flywaydb:flyway-core'
+
+
 	// ✅ WAR向け (Tomcatは開発中に内蔵を使うので providedRuntime は残す)
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 
